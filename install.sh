@@ -47,7 +47,7 @@ echo "
  |                                                  |
  |                                                  |::
  |       The installation will install and run      |::
- |        the masternode under a user tritt.     |::
+ |        the masternode.			    |::
  |                                                  |::
  |        This version of installer will setup      |::
  |           fail2ban and ufw for your safety.      |::
@@ -58,13 +58,6 @@ echo "
 "
 
 sleep 5
-
-USER=tritt
-
-adduser $USER --gecos "First Last,RoomNumber,WorkPhone,HomePhone" --disabled-password > /dev/null
-
-echo "" && echo 'Added user "tritt"' && echo ""
-sleep 1
 
 
 USERHOME=`eval echo "~$USER"`
